@@ -1,6 +1,5 @@
 package guru.springframework.spring6webapp.controllers;
 
-
 import guru.springframework.spring6webapp.services.BookService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,6 +20,6 @@ public class BookController {
         model.addAttribute("books", bookService.findAll());
 
         return "books";
-
     }
+
 }
